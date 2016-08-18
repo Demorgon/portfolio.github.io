@@ -11,7 +11,7 @@ body {
   position: relative;
   line-height: 1.42857;
     min-height: 100%;
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 *{
     margin: 0;
