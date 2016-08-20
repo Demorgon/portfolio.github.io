@@ -10,7 +10,7 @@ body {
   height: 100%;
   position: relative;
   line-height: 1.42857;
-    min-height: 100%;
+
 /*    overflow: hidden;*/
 }
 *{
@@ -27,37 +27,40 @@ body {
 
 h1{
     font-size: 10vw;
-    color: #ff9933;
+    color: #fff;
     flex-grow: 1;
     font-weight: 100;
     letter-spacing: 0.05em;
 }
 h3{
     font-size: 6.5vw;
-    color: #ff9933;
+    color: #fff;
     letter-spacing: 0.08em;
     font-weight: 100;
 }
 h4{
     font-size: 3vw;
-    color: #ff9933;
+    color: #fff;
     font-weight: 1000;
 }
 h5{
     font-size: 2vw;
-    color: #ff9933;
+/*    color: #ff9933;*/
+    color: #fff;
     letter-spacing: 0.08em;
     font-weight: 100;
 }
 p{
     font-size: 1.5vw;
-    color: #ff9933;
+    color: #fff;
     letter-spacing: 0.08em;
     font-weight: 100;
     margin: 0 5% 0 5%;
 }
 a{
     text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
 }
 .plate {
     display: flex;
@@ -73,7 +76,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 84%;
+    height: 92%;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -88,56 +91,11 @@ a{
     text-align: center;
 }
 
-
-.spacing {
-    letter-spacing: 0.15em;
-}
-
-.text_down {
-    align-items: flex-end;
-}
-
-.text_top {
-    align-items: flex-start;
-}
-
-.button {
-    border: 5px solid #ff9933;
-    height: 50%;
-    width: 30%;
-}
-
-.buttons_block {
-    width: 100%;
-    flex-grow: 1;
-    height: 20%;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    text-align: center;
-}
-
-.nav_container {
-    width: 10%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.about {
-    width: 10%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
 .nav_menu {
     height: 100%;
     flex-grow: 1;
-    display: flex;
     justify-content: space-around;
+    display: none;
 }
 
 .bottom_arrow {
@@ -148,7 +106,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #414141;
 }
 
 .bounce {
@@ -177,14 +135,20 @@ a{
 ::selection {
 background: #6f6f6f;
 }
-
+.white_bg{
+    background-color: rgba(65, 65, 65, 0.97);
+    transition: 0.5s;
+}
 .menu_container {
-    flex-grow: 1;
     height: 8%;
-    background-color: #fff;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: 0.5s;
 }
 
 .video-background { 

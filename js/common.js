@@ -35,3 +35,9 @@ $(function () {
         scaleToFill();
     });
 });   
+
+$('.nav_icon').on('click', function(){    
+    $('.menu_container').toggleClass("white_bg");
+    $('.nav_menu').toggle(500);
+    $('.nav_menu').css("display", "flex");
+});
