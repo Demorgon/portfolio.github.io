@@ -253,6 +253,8 @@ p{
     justify-content: center;
     align-items: center;
     bottom: 0;
+/*    padding-right: 5%;*/
+    margin-left: -2.5%;
 }
 
 .bounce {
