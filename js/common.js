@@ -11,5 +11,5 @@ $(document).ready(function() {
 });   
 
 $('.nav_icon').on('click', function(){    
-    $('.aside_menu').toggle(500);
+    $('.aside_menu').toggle(0);
 });
