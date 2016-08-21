@@ -12,7 +12,7 @@ body {
   height: 100%;
   position: relative;
   line-height: 1.42857;
-
+    overflow-x: hidden;
 /*    overflow: hidden;*/
 }
 *{
@@ -111,11 +111,19 @@ p{
 .menu_container {
     display: flex;
     height: 100%;
-    width: 25%;
-    left: 0;
+/*    width: 23%;*/
+/*    left: 0;*/
     justify-content: flex-start;
     align-items: flex-start;
 /*    position: fixed;*/
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .flex_container {
@@ -128,12 +136,12 @@ p{
 
 .aside_menu {
     height: 100%;
-    width: 23%;
+/*    width: 23%;*/
     background-color: #212121;
     flex-direction: column;
     display: flex;
-    display: none;
-/*    position: absolute;*/
+/*    display: none;*/
+    flex-grow: 1;
 }
 
 .menu_photo {
@@ -234,12 +242,17 @@ p{
 }
 
 .nav_icon {
-    height: 100%;
+/*    height: 100%;*/
     width: 5%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     text-align: center;
+    position: absolute;
+    top: 1%;
+    left: 0%;
+    z-index: 2;
+    transition: margin-left .5s;
 }
 .nav_icon:hover{
     background-color: rgba(85, 84, 84, 0.10);
@@ -278,4 +291,34 @@ p{
     80%       { bottom:1%; }
     90%       { bottom:3%; }
     100%      { bottom:5%;}
+}
+
+
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1111; /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    margin-left: 0%;
 }

@@ -10,6 +10,14 @@ $(document).ready(function() {
     });   
 });   
 
-$('.nav_icon').on('click', function(){    
-    $('.aside_menu').toggle(0);
-});
+function openNav() {
+    document.getElementById("mySidenav").style.width = "18%";
+    document.getElementById("main").style.marginLeft = "18%";
+    document.querySelector(".nav_icon").style.marginLeft = "18%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.querySelector(".nav_icon").style.marginLeft = "0";
+}
