@@ -13,11 +13,16 @@ $(document).ready(function() {
 
 var myMenu = document.querySelector(".menu_container");
 var oppMenu = document.querySelector(".nav_icon");
-var body = document.querySelector(".ok");
+var body = document.getElementsByClassName(".flex_container");
+var section2 = document.querySelectorAll('.section');
 //var body = document.querySelector(".content_container");
+//var body = document.querySelector(".flex_container");
 
 oppMenu.addEventListener("click", toggleClassMenu, false);
-body.addEventListener("click", closeMenu, false);
+//body.addEventListener("click", closeMenu, false);
+for (var i = 0; i < section2.length; i++) {
+    section2[i].addEventListener("click", closeMenu, false);
+}
 
 function closeMenu(){
     myMenu.classList.remove('menu--visible');
