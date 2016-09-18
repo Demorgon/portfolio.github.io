@@ -114,7 +114,7 @@ p{
     position: relative;
 }
 .section:first-child {
-    background-color: #FF9800;
+    background-color: #65c69d;
 }
 .section:nth-child(2) {
     background-color: #7eef87;
@@ -363,7 +363,7 @@ p{
 }
 .text_blank {
     background-color: #fff;
-    width: 55%;
+    width: 60%;
     height: 75%;
     display: flex;
     justify-content: center;
@@ -373,8 +373,8 @@ p{
     position: absolute;
     flex-direction: column;
     box-shadow: 0 14px 28px rgba(0,0,0,0.8), 0 10px 10px rgba(0,0,0,0.8);
-    left:50%; 
-    margin-left:-25%;
+/*    left:50%; */
+/*    margin-left:-25%;*/
 }
 
 .about_wrapper {
@@ -393,6 +393,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     position: absolute;   
     top: 0;
 }
@@ -418,7 +419,7 @@ p{
 img{
     top: 5%;
     left: 5%;
-    width: 80%;
+    width: 70%;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .row {

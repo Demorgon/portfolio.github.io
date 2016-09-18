@@ -13,7 +13,8 @@ $(document).ready(function() {
 
 var myMenu = document.querySelector(".menu_container");
 var oppMenu = document.querySelector(".nav_icon");
-var body = document.querySelector(".content_container");
+var body = document.querySelector(".ok");
+//var body = document.querySelector(".content_container");
 
 oppMenu.addEventListener("click", toggleClassMenu, false);
 body.addEventListener("click", closeMenu, false);
