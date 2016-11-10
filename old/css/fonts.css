@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Helvetica;
+  font-style: normal;
+  src: url(../fonts/HelveticaNeue/HelveticaNeue.ttf); 
+}
+@font-face {
+  font-family: HelveticaLight;
+  font-style: normal;
+  src: url(../fonts/HelveticaNeue/HelveticaNeueLight.ttf);
+}
+@font-face {
+  font-family: Awesome;
+  font-style: normal;
+  src: url(../fonts/FontAwesome/FontAwesome.otf);
+}
