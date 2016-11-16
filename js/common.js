@@ -1,6 +1,6 @@
 $(document).ready(function() {    
     function heightDetect() {
-        $("section").css("height", $(window).height());
+        $(".full_page").css("height", $(window).height());
     };
     
     heightDetect();
@@ -8,4 +8,17 @@ $(document).ready(function() {
     $(window).resize(function() {
         heightDetect();
     });  
+    
+    mouse_animation();
 });   
+
+
+function mouse_animation(){
+    $('.circle').animate({'top': '15'}, {
+        duration: 500, 
+        complete: function() {
+            $('.circle').animate({'top': '5'}, {
+                duration: 500, 
+                complete: mouse_animation});
+        }});
+}
