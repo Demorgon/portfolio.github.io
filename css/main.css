@@ -222,7 +222,7 @@ section:nth-child(3){
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(portfolio.github.io/img/platforms.png);
+    background-image: url(../img/platforms.png);
 }
 
 .flex_item {
@@ -268,19 +268,19 @@ section:nth-child(3){
     width: 100%;
 }
 .skills_item:first-child .skill_image {
-    background-image: url(portfolio.github.io/img/platforms.png/img/skill.png);
+    background-image: url(../img/skill.png);
 }
 .skills_item:nth-child(2) .skill_image {
-    background-image: url(portfolio.github.io/img/platforms.png/img/speed.png);
+    background-image: url(../img/speed.png);
 }
 .skills_item:nth-child(3) .skill_image {
-    background-image: url(portfolio.github.io/img/platforms.png/img/creativity.png);
+    background-image: url(../img/creativity.png);
 }
 .skills_item:nth-child(4) .skill_image {
-    background-image: url(portfolio.github.io/img/platforms.png/img/platforms.png);
+    background-image: url(../img/platforms.png);
 }
 .skills_item:nth-child(5) .skill_image {
-    background-image: url(portfolio.github.io/img/platforms.png/img/friendly.png);
+    background-image: url(../img/friendly.png);
 }
 
 .dark{
