@@ -14,10 +14,10 @@ $(document).ready(function() {
 
 
 function mouse_animation(){
-    $('.circle').animate({'top': '15'}, {
+    $('.circle').animate({'top': '40%'}, {
         duration: 500, 
         complete: function() {
-            $('.circle').animate({'top': '5'}, {
+            $('.circle').animate({'top': '5%'}, {
                 duration: 500, 
                 complete: mouse_animation});
         }});
