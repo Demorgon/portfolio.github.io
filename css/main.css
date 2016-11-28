@@ -311,6 +311,7 @@ section:nth-child(3){
     overflow: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); 
 }
 
 
