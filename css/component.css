@@ -1,0 +1,98 @@
+.skills_item:hover {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.skills_item svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.skills_item svg line {
+	stroke-width: 12;
+	stroke: #ce4c41;
+	fill: none;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+.skills_item:hover svg line {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+/*
+.skills_item svg line.top,
+.skills_item svg line.bottom {
+	stroke-dasharray: 630 540; 
+}
+
+.skills_item svg line.left,
+.skills_item svg line.right {
+	stroke-dasharray: 790 700;
+}
+*/
+
+.skills_item svg line.top {
+	-webkit-transform: translateX(-500px);
+	transform: translateX(-500px);
+}
+
+.skills_item svg line.bottom {
+	-webkit-transform: translateX(500px);
+	transform: translateX(500px);
+}
+
+.skills_item svg line.left {
+	-webkit-transform: translateY(-550px);
+	transform: translateY(-550px);
+}
+
+.skills_item svg line.right {
+	-webkit-transform: translateY(550px);
+	transform: translateY(550px);
+}
+
+
+
+.skills_item:hover svg line.top {
+	-webkit-transform: translateX(-0);
+	transform: translateX(-0);
+}
+
+.skills_item:hover svg line.bottom {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.skills_item:hover svg line.left {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.skills_item:hover svg line.right {
+	-webkit-transform: translateY(-0);
+	transform: translateY(-0);
+}
+
+/* Alternatives */
+
+/* Color */
+/*
+.demo-2 .skills_item {
+	box-shadow: inset 0 0 0 10px #2c3e50;
+}
+
+.demo-2 .skills_item:hover h3,
+.demo-2 .skills_item:hover span {
+	color: #fe6f83;
+}
+
+.demo-2 .skills_item svg line {
+	stroke-width: 8;
+}
+
+.demo-2 .skills_item:hover svg line {
+	stroke: #fe6f83;
+}*/

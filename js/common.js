@@ -4,15 +4,14 @@ $(document).ready(function() {
     };
 
     heightDetect();
-    
+    svg_position_func();
     $(window).resize(function() {
+        svg_position_func();
         heightDetect();
     });  
     
     mouse_animation();
     skills_animation();
-    
-
 });   
 
 
@@ -37,6 +36,7 @@ function skills_animation(){
         else {
             if (skills_animation_flag === false && $(".skills_item:last-child").css("opacity") == "1"){
                 skills_animation_flag = true;
+                skills_animation();
             }
         }
            
@@ -44,6 +44,20 @@ function skills_animation(){
 
 
 
+function svg_position_func(){
+    let svg_height = $(".skills_item").outerHeight(false);
+    let svg_width = $(".skills_item").outerWidth(false);
+//    alert(svg_height);
+    $(".bottom").attr({
+        y1:svg_height,
+        y2:svg_height,
+        x2:svg_width
+    });
+    $(".right").attr({
+        x1:svg_width,
+        x2:svg_width
+    });
+};
 
 
 
