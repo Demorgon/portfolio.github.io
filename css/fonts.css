@@ -13,3 +13,13 @@
   font-style: normal;
   src: url(../fonts/FontAwesome/FontAwesome.otf);
 }
+@font-face {
+  font-family: TonduBeta;
+/*  font-style: normal;*/
+  src: url(../fonts/TonduBeta/TonduBeta.ttf);
+}
+@font-face {
+  font-family: Trump;
+/*  font-style: normal;*/
+  src: url(../fonts/Trump/Trump.ttf);
+}
