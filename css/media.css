@@ -52,3 +52,13 @@
 @media only screen and (min-width : 1200px) {
 
 }
+.credit_title {
+    height: 40%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

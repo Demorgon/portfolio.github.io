@@ -1,7 +1,31 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full_page {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
     font-family: Roboto;
     margin: 0;
     padding: 0;
+    /*    background-color: #fff121;*/
+        overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    z-index: 1;
+}
+
+p {
+    color: #888;
+    font-size: 1.125rem;
+    line-height: 2rem;
 }
 
 h1 {
@@ -13,14 +37,23 @@ h1 {
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 1;
+/*    line-height: 7.1875rem;*/
 }
-h1 span{
-    
+
+h1 span {}
+
+h2 {
+    font-family: 'Trump', sans-serif;
+    font-size: 3rem;
+    color: #111517;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
-h2{
+
+h3 {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    color: #fff; 
+    color: #fff;
     font-size: 1rem;
 }
 
@@ -28,6 +61,13 @@ h2{
     width: 100%;
     height: 100%;
     position: relative;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+/*    border: 3px solid red;*/
 }
 
 .video_bg {
@@ -50,9 +90,9 @@ h2{
     height: auto;
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     -webkit-filter: blur(0px) grayscale(1) brightness(0.2);
-            filter: blur(0px) grayscale(1) brightness(0.2);
+    filter: blur(0px) grayscale(1) brightness(0.2);
 }
 
 .nav_container {
@@ -62,11 +102,11 @@ h2{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -84,19 +124,21 @@ h2{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-align-items: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
-.logo i{
-    color: #ef0d33;
+
+.logo i {
+    color: #e82121;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
-.logo i:hover{
+
+.logo i:hover {
     color: #fff;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -113,15 +155,15 @@ h2{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-align-items: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background-image: url(../img/menu.png);
     -webkit-filter: invert(1);
-            filter: invert(1);
+    filter: invert(1);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -137,12 +179,12 @@ h2{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-align-items: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: left;
     z-index: 1;
 }
@@ -153,28 +195,31 @@ i {
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
+
 i:hover {
-    color: #ef0d33;
+    color: #e82121;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
-.row{
+.row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 }
-.column{
+
+.column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
+
 .circle {
     width: 125px;
     height: 125px;
-    border: 5px solid #ef0d33;
+    border: 5px solid #e82121;
     border-radius: 9999px;
     display: -moz-flex;
     display: -ms-flex;
@@ -183,26 +228,29 @@ i:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-align-items: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     cursor: pointer;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
-.circle i{
-    color: #ef0d33;
+
+.circle i {
+    color: #e82121;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
-.circle:hover i{
+
+.circle:hover i {
     color: #fff;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
+
 .circle:hover {
     width: 150px;
     height: 150px;
@@ -210,6 +258,7 @@ i:hover {
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
+
 .text_container {
     width: 100%;
     text-align: left;
@@ -219,6 +268,126 @@ i:hover {
 .line {
     height: 5px;
     width: 5%;
-    background-color: #ef0d33;
+    background-color: #e82121;
     margin: 3% 0%;
+}
+
+.container {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    position: absolute;
+}
+
+.centered {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.hire_button {
+    width: 100%;
+    height: 400px;
+    background-color: #e82121;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.credits_item {
+    -ms-flex-preferred-size: 450px;
+    flex-basis: 350px;
+    text-align: center;
+    height: 250px;
+/*    border: 5px solid black;*/
+/*    background-color: bisque;*/
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.credits_container {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 10%;
+/*    border: 3px solid blue;*/
+    background-color: #111517;
+}
+
+
+.hire_button_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-color: firebrick;
+    z-index: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+}
+.hire_button:hover .hire_button_bg {
+    -webkit-transform: translateX(-20%) skewX(20deg);
+            transform: translateX(-20%) skewX(20deg);
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
 }
