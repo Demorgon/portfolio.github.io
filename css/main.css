@@ -9,12 +9,39 @@
     width: 100vw;
 }
 
+::-moz-selection {
+    color: #fff;
+    background: #111517;
+}
+
+::selection {
+    color: #fff;
+    background: #111517;
+}
+
 body {
     font-family: Roboto;
     margin: 0;
     padding: 0;
-    /*    background-color: #fff121;*/
-        overflow-x: hidden;
+    overflow-x: hidden;
+    text-align: center;
+    min-width: 320px;
+}
+
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #111517;
+}
+
+.grey {
+    color: #888;
+}
+
+.red {
+    color: #cb2121;
 }
 
 a {
@@ -23,38 +50,42 @@ a {
 }
 
 p {
-    color: #888;
     font-size: 1.125rem;
-    line-height: 2rem;
 }
 
-h1 {
+p span {
+    color: #cb2121;
+}
+
+.biggest_straight {
     margin: 0;
     padding: 0;
     font-family: 'Trump', sans-serif;
     font-size: 6rem;
-    color: #ffffff;
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 1;
-/*    line-height: 7.1875rem;*/
+    z-index: 1;
 }
 
-h1 span {}
-
-h2 {
+.medium_straight {
     font-family: 'Trump', sans-serif;
     font-size: 3rem;
-    color: #111517;
     letter-spacing: 1px;
     line-height: 1.5;
 }
 
-h3 {
+.small_straight {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    color: #fff;
     font-size: 1rem;
+}
+
+.big_slant {
+    font-family: Playfair Display;
+    font-size: 2em;
+    margin: 3% 25%;
+    z-index: 1;
 }
 
 .flex_container {
@@ -67,7 +98,7 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-/*    border: 3px solid red;*/
+    /*    border: 3px solid red;*/
 }
 
 .video_bg {
@@ -133,7 +164,7 @@ h3 {
 }
 
 .logo i {
-    color: #e82121;
+    color: #cb2121;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -197,7 +228,7 @@ i {
 }
 
 i:hover {
-    color: #e82121;
+    color: #cb2121;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -219,7 +250,7 @@ i:hover {
 .circle {
     width: 125px;
     height: 125px;
-    border: 5px solid #e82121;
+    border: 5px solid #cb2121;
     border-radius: 9999px;
     display: -moz-flex;
     display: -ms-flex;
@@ -240,7 +271,7 @@ i:hover {
 }
 
 .circle i {
-    color: #e82121;
+    color: #cb2121;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -268,7 +299,7 @@ i:hover {
 .line {
     height: 5px;
     width: 5%;
-    background-color: #e82121;
+    background-color: #cb2121;
     margin: 3% 0%;
 }
 
@@ -313,8 +344,8 @@ i:hover {
 
 .hire_button {
     width: 100%;
-    height: 400px;
-    background-color: #e82121;
+    height: 550px;
+    background-color: #cb2121;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -328,8 +359,8 @@ i:hover {
     flex-basis: 350px;
     text-align: center;
     height: 250px;
-/*    border: 5px solid black;*/
-/*    background-color: bisque;*/
+    /*    border: 5px solid black;*/
+    /*    background-color: bisque;*/
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -337,11 +368,12 @@ i:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
 }
 
 .wrap {
@@ -367,27 +399,123 @@ i:hover {
     flex-flow: row wrap;
     width: 100%;
     padding: 10%;
-/*    border: 3px solid blue;*/
+    /*    border: 3px solid blue;*/
     background-color: #111517;
 }
-
 
 .hire_button_bg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 200%;
+    width: 150%;
     height: 100%;
-    background-color: firebrick;
+    background-color: #b11d1d;
     z-index: 0;
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    transform: translateX(100%);
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
 }
+
 .hire_button:hover .hire_button_bg {
-    -webkit-transform: translateX(-20%) skewX(20deg);
-            transform: translateX(-20%) skewX(20deg);
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    -webkit-transform: translateX(-20%) skewX(-20deg);
+    transform: translateX(-20%) skewX(-20deg);
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.do_container {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 350px;
+    flex-basis: 350px;
+    height: 450px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: 5% 5%;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.do_container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15), 0 0px 5px rgba(0, 0, 0, 0.15);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-transform: translateY(-2%);
+    transform: translateY(-2%);
+}
+
+.do_img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10%;
+}
+
+.do_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.skills_item {
+    -ms-flex-preferred-size: 49.4vw;
+    flex-basis: 49.4vw;
+    height: 350px;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #111517
+}
+
+.skills_item_img {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    height: 40%;
+    border-right: 4px solid #fff;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 5%;
+}
+
+.skills_item_text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: left;
+    padding: 5%;
 }

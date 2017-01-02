@@ -1,15 +1,14 @@
-$(document).ready(function() {    
+$(document).ready(function () {
     function heightDetect() {
         $(".full_page").css("height", $(window).height());
     };
 
-//    heightDetect();
-    
-    $(window).resize(function() {
-        heightDetect();
-    });  
-});   
+    //    heightDetect();
 
+    $(window).resize(function () {
+        heightDetect();
+    });
+});
 
 //function mouse_animation(){
 //    $('.circle').animate({'top': '40%'}, {
