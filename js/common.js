@@ -19,3 +19,7 @@ $(document).ready(function () {
 //                complete: mouse_animation});
 //        }});
 //};
+
+//setInterval(function() {
+//  $("#page-menu-next-button").click();
+//}, (Math.random() * (30000 - 10000) + 10000));
