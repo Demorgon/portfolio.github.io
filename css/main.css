@@ -7,6 +7,7 @@
 .full_page {
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 ::-moz-selection {
@@ -364,7 +365,7 @@ i:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 150%;
+    width: 170%;
     height: 100%;
     background-color: #b11d1d;
     z-index: 0;
