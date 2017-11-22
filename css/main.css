@@ -7,7 +7,6 @@
 .full_page {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
 }
 
 ::-moz-selection {
@@ -27,6 +26,10 @@ body {
     overflow-x: hidden;
     text-align: center;
     min-width: 320px;
+}
+
+section{
+    overflow-x: hidden;
 }
 
 .white {
